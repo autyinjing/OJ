@@ -10,7 +10,7 @@
 class Solution {
 public:
     struct TreeNode* reConstructBinaryTree(vector<int> pre,vector<int> in) {
-        auto root = help(pre, in, 0, pre.size() - 1, 0, in.size());
+        auto root = help(pre, in, 0, pre.size() - 1, 0, in.size() - 1);
         return root;
     }
     
