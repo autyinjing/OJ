@@ -1,4 +1,6 @@
-bool Find(vector<vector<int> > array,int target) {
+class Solution {
+public:
+    bool Find(vector<vector<int> > array,int target) {
         //从左下开始查找，右上同理
         for (int i = array.size()-1, j = 0; (i >= 0) && (j < array[0].size()); ) {
             if (array[i][j] == target) {
@@ -11,4 +13,5 @@ bool Find(vector<vector<int> > array,int target) {
         }
 
         return false;
-}
+    }
+};

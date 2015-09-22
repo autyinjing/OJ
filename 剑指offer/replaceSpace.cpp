@@ -1,4 +1,6 @@
-void replaceSpace(char *str,int length) {
+class Solution {
+public:
+    void replaceSpace(char *str,int length) {
         int count = 0; 	//空格数
         int new_length; //新的串长
         
@@ -20,4 +22,5 @@ void replaceSpace(char *str,int length) {
             }
         }
         str[new_length] = '\0';
-}
+    }
+};
