@@ -17,5 +17,22 @@ public:
         for (int ph = 0, pa = 0; ph < help.size(); ++ph) {
             array[pa++] = help[ph];
         }
+
+	//解法2：移位
+        //int help = 0, i = 0, j = 0;
+        //while (i < array.size()) 
+        //{
+        //    while (i < array.size() && (array[i] & 1)) ++i;
+        //    j = i + 1;
+        //    while (j < array.size() && !(array[j] & 1)) ++j;
+        //    if (j >= array.size())
+        //        break;
+        //    help = array[j];
+        //    while (j > i) {
+        //        array[j] = array[j-1];
+        //        --j;
+        //    }
+        //    array[i++] = help;
+        //}
     }
 };

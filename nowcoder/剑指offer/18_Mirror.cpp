@@ -11,7 +11,8 @@ class Solution {
 public:
     void Mirror(TreeNode *pRoot) {
         //直接交换指针
-        if (pRoot != NULL) {
+        if (pRoot != NULL)
+        {
             swap(pRoot->left, pRoot->right);
             Mirror(pRoot->left);
             Mirror(pRoot->right);
